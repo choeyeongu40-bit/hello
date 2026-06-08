@@ -1,4 +1,4 @@
-streamlit run app.py
+import streamlit as st
 
 # 1. 웹사이트 타이틀 및 설명 설정
 st.set_page_config(page_title="혼밥소외지수 진단기", page_icon="📊", layout="centered")
