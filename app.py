@@ -13,12 +13,12 @@ st.subheader("🕵️‍♂️ 변수 입력")
 col1, col2 = st.columns(2)
 
 with col1:
-    A = st.slider("A: 빈도 요인 (절삭평균 / 7회)", min_value=0.0, max_value=1.0, value=0.31, step=0.001)
-    B = st.slider("B: 비자발적 심리 요인 (사람 없음 비율)", min_value=0.0, max_value=1.0, value=0.33, step=0.001)
+    A = st.slider("A: 빈도 요인 (절삭평균 / 7회)", min_value=0.0, max_value=1.0, value=0.306, step=0.001, format="%0.3f")
+    B = st.slider("B: 비자발적 심리 요인 (사람 없음 비율)", min_value=0.0, max_value=1.0, value=0.333, step=0.001, format="%0.3f")
 
 with col2:
-    C = st.slider("C: 극단적 이상치 요인 (이상치 학생 비율)", min_value=0.0, max_value=1.0, value=0.0, step=0.001)
-    D = st.slider("D: 양극화 요인 (변동계수)", min_value=0.0, max_value=2.0, value=1.12, step=0.001)
+    C = st.slider("C: 극단적 이상치 요인 (이상치 학생 비율)", min_value=0.0, max_value=1.0, value=0.000, step=0.001, format="%0.3f")
+    D = st.slider("D: 양극화 요인 (변동계수)", min_value=0.0, max_value=2.0, value=1.120, step=0.001, format="%0.3f")
 
 # 3. 혼밥소외지수 계산
 score = 100 * (0.2 * A + 0.3 * B + 0.3 * C + 0.2 * D)
